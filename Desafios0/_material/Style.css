@@ -1,9 +1,12 @@
-body{
-        font-family:Arial;
-        background-color: #333333
-        padding: 10px; 
-        border-style: dashed dotted;
-        text color: #333333;
-    
+h1{
+        background-color: black;
+        color:white;
+        height: 100px;
+        margin-top: -10px;
+        
+    }
 
+h2{
+        margin-left:100px;
+        margin-top: 70px;
 }
