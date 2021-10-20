@@ -16,3 +16,21 @@ p{
         margin-right: 100px;
         font-size: large;
 }
+
+body img{
+        margin-left: 100px;
+        margin-top: 0px;
+
+}
+
+p1{
+        margin-top: px;
+        font-size: small;
+        text-align: center;
+        border: 10px rgb(0, 0, 0);
+}
+footer{
+        margin: auto;
+        background-color: black;
+        color: white;
+}
