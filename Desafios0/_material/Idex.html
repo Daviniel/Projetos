@@ -1,57 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Style.css">
-    <title>Document</title>
-</head>
-<h1>
-    <center>
-        <img src="images/logo.svg" alt="logo Smart fit" height="100px"
-    </center>
-   
-</h1>
-
-<body>
-    <font color=#333333 /font> 
-    <h2>
-        REABERTURA 
-        <br>SMART FIT
-        <hr size="10" width="10%" color="#333333" align="left">
-    </h2>
-    <p> O horário de funcionamento das nossas unidades está seguindo os decretos de cada município. Por isso, confira aqui se a sua unidade está aberta e as medidas de segurança que estamos seguindo.</p>
-   <p1>
-        <img src="images/icon-hour.png" alt="horário" height="30px">
-        Horário
-    </p1>
-    <div>
-        <p>
-            <br> período quer treinar?
-
-            <br> Manhã 06:00 às 12:00
-    
-            <br> Tarde 12:01 às 18:00
-    
-            <br> Noite 18:01 às 23:00
-    
-            <br> Exibir unidades fechadas
-    
-            <br> Encontrar unidade
-    
-            <br> Limpar
-        </p>
-    </div>
-<footer>
-    <center>
-        <img src="images/logo.svg" alt="Logo Smart fit" height="50px">
-        <p>
-            Todos os direitos reservados - 2020
-        </p>
-    </center>
-</footer>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <section id="cabeca">
+                <div id="logo">
+                    <img src="images/logo.svg" alt="Logo-Fit">
+                </div>
+                <div id="titulo">
+                    <div class="cabeca-titulo">
+                        <h1>
+                            REABERTURA <br />
+                            SMART FIT
+                        </h1>
+                    </div>
+                    <hr />
+                    <div>
+                        <p class="sub-Titulo">
+                            O horário de funcionamento das nossas unidades está seguindo os
+                            decretos de cada município. Por isso, confira aqui se a sua
+                            unidade está aberta e as medidas de segurança que estamos
+                            seguindo.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <div class = "main">
+            <div class = "head">
+                <img id="hora" src="images/icon-hour.png" alt="Horário"> />Horário
+            </div>
+            <div class = "trening">
+               <p class="period"> Qual período quer treinar?</p>
+                <hr class="hrMor1">
+            </div>
+            <div class= "morning">
+                <input type="radio" id="manha"/>
+                <label for="manha">Manhã</label>
+            </div>
+            <div>06:00 ás 12:00</div>
+            <hr class="hrMor">
+            <div class= "evening">
+                <input type="radio" id="tarde" /> 
+                <label for="Tarde">Tarde</label> 
+            </div>
+            <div>12:01 às 18:00 </div>
+            <hr class="hrMor">
+            <div class= "night">
+                <input type="radio" id="noite" />
+                <label for="noite">Noite</label>
+            </div>
+            <div>18:01 às 23:00</div>
+            <hr class="hrMor">
+            <div id="Unid-Fec">
+                <div>
+                    <input type="checkbox" id="unidades-fechadas" />
+                    <label for="unidades-fechadas">
+                    Exibir unidades fechadas
+                    </label>
+                </div>
+                <div id="result-count">
+                    <div>Resultados encontrados: <strong> 0</strong> </div>
+                    <div id="count"></div>
+                </div>
+            </div>
+            <div id="encont">
+                <button id="find-encont">ENCONTRAR UNIDADE</button>
+                <button id="clear-encont">LIMPAR</button>
+            </div>
+        </div>
+    </body>
 </html>
