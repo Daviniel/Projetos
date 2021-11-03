@@ -44,7 +44,7 @@ hr {
 
 
 
-
+/* =============== Formulario ===================*/
 
 
 .main {
@@ -153,4 +153,45 @@ hr {
         background-color: #dba21d;
         border: 2px solid #dba21d;
         transition: 0.2s;
+}
+
+/* =============== Itens recomendados/obrigatorios ===================*/
+
+#mand {
+        border-radius: 3px;
+        padding: 35px 22px 30px 22px;
+        background-color: #f5f5f5;
+        width: 67%;
+        margin: auto;
+}
+#inf-mand {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+}
+.iten-mand {
+        text-align: center;
+}
+.tit-iten {
+        font-family: 'fontBold';
+}
+.img-mand {
+        display: flex;
+        margin-top: 15px;
+}
+.imagens {
+        width: 50px;
+}
+.img {
+        text-align: center;
+        margin-right: 5px;
+}
+.img-reco {
+        text-align: center;
+        margin-right: 5px;
+}
+.Des-iten{
+        color: black;
+        font: 'fontLight';
 }
