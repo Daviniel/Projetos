@@ -32,47 +32,58 @@
                 </div>
             </section>
         </header>
+        
         <div class = "main">
-            <div class = "head">
-                <img id="hora" src="images/icon-hour.png" alt="Horário"> />Horário
-            </div>
-            <div class = "trening">
-               <p class="period"> Qual período quer treinar?</p>
+            <div id= "from">
+                <div class = "head">
+                    <img id="hora" src="images/icon-hour.png" alt="Horário"/> Horário
+                </div>
+                <p class="period"> Qual período quer treinar?</p>
                 <hr class="hrMor1">
-            </div>
-            <div class= "morning">
-                <input type="radio" id="manha"/>
-                <label for="manha">Manhã</label>
-            </div>
-            <div>06:00 ás 12:00</div>
-            <hr class="hrMor">
-            <div class= "evening">
-                <input type="radio" id="tarde" /> 
-                <label for="Tarde">Tarde</label> 
-            </div>
-            <div>12:01 às 18:00 </div>
-            <hr class="hrMor">
-            <div class= "night">
-                <input type="radio" id="noite" />
-                <label for="noite">Noite</label>
-            </div>
-            <div>18:01 às 23:00</div>
-            <hr class="hrMor">
-            <div id="Unid-Fec">
-                <div>
-                    <input type="checkbox" id="unidades-fechadas" />
-                    <label for="unidades-fechadas">
-                    Exibir unidades fechadas
-                    </label>
-                </div>
-                <div id="result-count">
-                    <div>Resultados encontrados: <strong> 0</strong> </div>
-                    <div id="count"></div>
-                </div>
-            </div>
-            <div id="encont">
-                <button id="find-encont">ENCONTRAR UNIDADE</button>
-                <button id="clear-encont">LIMPAR</button>
+                <form>
+                    <div id="horario">   
+                        <div class= "morning">
+                            <div>
+                                <input type="radio" id="manha"/>
+                                <label for="manha">Manhã</label>
+                            </div>
+                            <div>06:00 ás 12:00</div>
+                        </div>
+                        <hr class="hrMor">
+                        <div class= "morning">
+                            <div>   
+                                <input type="radio" id="tarde" /> 
+                                <label for="Tarde">Tarde</label>
+                            </div> 
+                            <div>12:01 às 18:00 </div>
+                        </div>
+                        <hr class="hrMor">
+                        <div class= "morning">
+                            <div>
+                                <input type="radio" id="noite" />
+                                <label for="noite">Noite</label>
+                            </div> 
+                            <div>18:01 às 23:00</div>
+                        </div>  
+                        <hr class="hrMor">
+                    </div> 
+                    <div id="Unid-Fec">
+                        <div>
+                            <input type="checkbox" id="unidades-fechadas" />
+                            <label for="unidades-fechadas">
+                            Exibir unidades fechadas
+                            </label>
+                        </div>
+                        <div id="result-count">
+                            <div>Resultados encontrados: <strong> 0</strong> </div>
+                            <div id="count"></div>
+                        </div>
+                    </div>
+                    <div id="encont">
+                        <button id="find-encont">ENCONTRAR UNIDADE</button>
+                        <button id="clear-encont">LIMPAR</button>
+                    </div>
+                </form>
             </div>
         </div>
     </body>
