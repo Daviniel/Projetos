@@ -44,7 +44,7 @@ hr {
 
 
 
-/* =============== Formulario ===================*/
+/* ---- Formulario ----*/
 
 
 .main {
@@ -155,7 +155,7 @@ hr {
         transition: 0.2s;
 }
 
-/* =============== Itens recomendados/obrigatorios ===================*/
+/* ---- Itens recomendados/obrigatorios ----*/
 
 #mand {
         border-radius: 3px;
@@ -194,4 +194,85 @@ hr {
 .Des-iten{
         color: black;
         font: 'fontLight';
+}
+
+/* ---- Unidades ----*/
+#loc {
+        display: flex;
+        justify-content: center;
+}
+.locloc {
+        margin: 18px 10px 5px 10px;
+}
+.name-loc {
+        background-color: #f5f5f5;
+        border-radius: 5px;
+        border: 2px solid #ececec;
+        box-shadow: 0 0 5px #dbdbdb;
+        margin: 35px 0px 100px 0px;
+        width: 20%;
+        height: 500px;
+}
+.last-loc {
+        margin-left: 15px;
+}
+.firts-loc {
+        margin-right: 15px;
+}
+.unit-text {
+        font-family: 'fontBold';
+}
+.unit-open {
+        color: green;
+}
+.unit-close {
+        color: red;
+}
+.title-title {
+        font-family: 'fontBold';
+        color: black;
+}
+.sub-title {
+        font-family: 'fontLight';
+        color: grey;
+        width: 70%;
+        margin-bottom: 20px;
+}
+.hr-hr {
+        height: 2px;
+        width: 90%;
+        background-color: #e6e6e6;
+        margin: auto;
+}
+.dias {
+        text-align: left;
+}
+.dia-sab {
+        text-align: right;
+        
+}
+.img-unid-unid {
+        text-align: center;
+}
+
+/*---- fim ----*/
+footer {
+        padding: 50px 0px 100px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(70, 69, 69);
+        color: whitesmoke;
+}
+      
+#fim {
+        text-align: center;
+        width: 130px;
+        margin-bottom: 20px;
+}
+      
+#text-fim {
+        text-align: center;
+        font-family: 'fontLight';
 }
