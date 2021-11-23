@@ -85,7 +85,74 @@ function createDaysOfTheWeek() {
     buttonClass.appendChild(fridayButton)
   }
   buttonFriday('Sexta-Feira')
-
   
+  //5
 
-  
+  function textFriday() {
+    let btnFriday = document.querySelector('#btn-friday')
+    let allFriday = document.querySelectorAll('.friday')
+    let itsFriday = 'Dia de Sextaaa !!'
+    let fridayArray = []
+
+    btnFriday.addEventListener('click', function eventFriday () {
+      for (let index = 0; index < allFriday.length; index++) {
+        let numeros = allFriday[index]
+        fridayArray.push(numero.innerHTML)
+        if (allFriday[index].innerHTML == itsFriday) {
+          allFriday[index].innerHTML = fridayArray[index]
+        } else {
+          allFriday[index].innerHTML = itsFriday
+        }
+      }
+    })
+  }
+  textFriday()
+
+  //6
+
+  let mouseTarger = document.getElementsByClassName('day')
+  for (let i = 0; i < mouseTarger.length; i++) {
+    mouseTarger[i].addEventListener('mouseover', function over (e) {
+      e.target.style.transform = 'scale(2)'
+    })
+    mouseTarger[i].addEventListener('mouseout', function leave(e) {
+      e.target.style.transform = 'scale(1)'
+    })
+  }
+
+  //7
+
+  const tasksMonth = document.querySelector('.my-tasks')
+  function addTasks() {
+    const mytasks = document.createElement('span')
+    mytasks.innerHTML = 'name Task'
+    tasksMonth.appendChild(mytasks)
+  }
+  addTasks()
+
+  //8
+
+  function addColorTask(cor) {
+    const myColortasks = document.createElement('div')
+    myColortasks.style.backgrouendColor = cor
+    myColortasks.className = 'task'
+    myColortasks.addEventListener('click', function () {
+      
+      //9
+
+      if (myColortasks.className !== 'selected-task') {
+        myColortasks.className = 'selected-task'
+      } else {
+        myColortasks.className = 'task'
+      }
+    })
+    tasksMonth.appendChild(myColortasks)
+  }
+  addColorTask('blue')
+
+  //10
+  const selectedDay = document.querySelectorAll('.day')
+  const taskSelected = document.getElementsByClassName('selected-task')
+  console.log(selectedDay)
+  function colorDay() {}
+  colorDay()
